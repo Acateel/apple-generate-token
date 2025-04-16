@@ -1,0 +1,17 @@
+{
+  "name": "apple-generate-token",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "generate": "node ./index"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "fs": "^0.0.1-security",
+    "jose": "^6.0.10",
+    "path": "^0.12.7"
+  }
+}
