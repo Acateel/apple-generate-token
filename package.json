@@ -5,7 +5,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "generate": "node ./index"
+    "generate": "node ./index",
+    "generate:dev": "dotenv -e .env.development.local -- yarn generate",
+    "generate:prod": "dotenv -e .env.production.local -- yarn generate"
   },
   "dependencies": {
     "crypto": "^1.0.1",
@@ -13,5 +15,8 @@
     "fs": "^0.0.1-security",
     "jose": "^6.0.10",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0"
   }
 }
