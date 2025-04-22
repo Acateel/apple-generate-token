@@ -24,5 +24,5 @@ const secret = await new SignJWT({})
 
 console.log(`Apple client secret generated. Valid until: ${new Date(expirationTime * 1000)}`)
 console.log(`APPLE_CLIENT_ID="${client_id}"`)
-console.log(`APPLE_CLIENT_SECRET"${secret}"`)
+console.log(`APPLE_CLIENT_SECRET="${secret}"`)
 
